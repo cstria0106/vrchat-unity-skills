@@ -1144,7 +1144,8 @@ def bake_seam_normals(body, body_loop, head, head_loop, regions=None, expand=3, 
         bpy.context.tool_settings.mesh_select_mode = (True, False, False)
         for _ in range(expand):
             bpy.ops.mesh.select_more()
-        bpy.ops.mesh.smooth_normals(factor=factor)
+        for _ in range(3):
+            bpy.ops.mesh.smooth_normals(factor=factor)
         bpy.ops.object.mode_set(mode='OBJECT')
         for mod, _ in visibility:
             mod.show_viewport = False
@@ -1173,7 +1174,7 @@ def bake_seam_normals(body, body_loop, head, head_loop, regions=None, expand=3, 
         for obj in [b, h]:
             obj.data.normals_split_custom_set(normals_to_commit[obj.name])
         committed = True
-        return {'transferred_to': [body, head], 'expanded_steps': expand, 'donor_removed': True}
+        return {'transferred_to': [body, head], 'expanded_steps': expand, 'smooth_iterations': 3, 'smooth_factor': factor, 'donor_removed': True}
     finally:
         if bpy.context.mode != 'OBJECT':
             bpy.ops.object.mode_set(mode='OBJECT')
