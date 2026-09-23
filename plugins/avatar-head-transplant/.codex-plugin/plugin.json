@@ -1,0 +1,34 @@
+{
+  "name": "avatar-head-transplant",
+  "version": "0.1.0",
+  "description": "Transplant rigged avatar heads in Blender with preserved deformation data and native candidate review.",
+  "author": {
+    "name": "cstria0106",
+    "url": "https://github.com/cstria0106"
+  },
+  "repository": "https://github.com/cstria0106/vrchat-unity-skills",
+  "homepage": "https://github.com/cstria0106/vrchat-unity-skills",
+  "license": "MIT",
+  "keywords": [
+    "vrchat",
+    "avatar",
+    "blender",
+    "fbx",
+    "head-transplant"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Avatar Head Transplant",
+    "shortDescription": "Fit avatar heads with native Blender review.",
+    "longDescription": "Align donor heads, preserve internal neck loops, UVs, shape keys and rigging, and compare completed Blender candidates before final confirmation. Requires an existing Blender MCP connection.",
+    "developerName": "cstria0106",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use the transplant-avatar-head skill to fit a donor head to my avatar body."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vrchat-unity-skills",
+  "owner": {
+    "name": "cstria0106"
+  },
+  "metadata": {
+    "description": "Skills for VRChat avatar workflows, compatible with Claude Code and Codex."
+  },
+  "plugins": [
+    {
+      "name": "avatar-head-transplant",
+      "source": "./plugins/avatar-head-transplant",
+      "description": "Transplant rigged avatar heads in Blender with preserved deformation data and native candidate review.",
+      "version": "0.1.0"
+    }
+  ]
+}

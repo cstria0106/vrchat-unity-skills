@@ -1,0 +1,19 @@
+{
+  "name": "avatar-head-transplant",
+  "version": "0.1.0",
+  "description": "Transplant rigged avatar heads in Blender with preserved deformation data and native candidate review.",
+  "author": {
+    "name": "cstria0106",
+    "url": "https://github.com/cstria0106"
+  },
+  "repository": "https://github.com/cstria0106/vrchat-unity-skills",
+  "homepage": "https://github.com/cstria0106/vrchat-unity-skills",
+  "license": "MIT",
+  "keywords": [
+    "vrchat",
+    "avatar",
+    "blender",
+    "fbx",
+    "head-transplant"
+  ]
+}

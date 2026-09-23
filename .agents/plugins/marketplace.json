@@ -1,0 +1,20 @@
+{
+  "name": "vrchat-unity-skills",
+  "interface": {
+    "displayName": "Vrchat Unity Skills"
+  },
+  "plugins": [
+    {
+      "name": "avatar-head-transplant",
+      "source": {
+        "source": "local",
+        "path": "./plugins/avatar-head-transplant"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avatar Head Transplant"
+  short_description: "Fit avatar heads and preserve neck topology, rigging and normals"
+  default_prompt: "Use $transplant-avatar-head to fit a donor head to a recipient body in Blender while preserving facial identity, deformation data and a smooth separate-mesh neck seam."
